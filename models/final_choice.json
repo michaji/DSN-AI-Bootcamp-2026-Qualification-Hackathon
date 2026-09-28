@@ -1,0 +1,38 @@
+{
+  "winning_approach": "CatBoost (Tuned)",
+  "winning_cv_rmse": 1071.0434930948834,
+  "weights": "CatBoost (Tuned)",
+  "all_results": [
+    {
+      "Model / Ensemble": "CatBoost (Tuned)",
+      "CV RMSE": 1071.0434930948834,
+      "Weights": "CB=1.0"
+    },
+    {
+      "Model / Ensemble": "CV-Weighted Blend (LGB+CB)",
+      "CV RMSE": 1071.123069397359,
+      "Weights": "0.499 / 0.501"
+    },
+    {
+      "Model / Ensemble": "CV-Weighted Blend (LGB+XGB+CB)",
+      "CV RMSE": 1071.6394320431677,
+      "Weights": "0.333 / 0.332 / 0.334"
+    },
+    {
+      "Model / Ensemble": "Simple Average (LGB+XGB+CB)",
+      "CV RMSE": 1071.6459683874045,
+      "Weights": "0.33 / 0.33 / 0.33"
+    },
+    {
+      "Model / Ensemble": "LightGBM (Tuned)",
+      "CV RMSE": 1074.9915330111248,
+      "Weights": "LGB=1.0"
+    },
+    {
+      "Model / Ensemble": "XGBoost (Tuned)",
+      "CV RMSE": 1077.2419991934435,
+      "Weights": "XGB=1.0"
+    }
+  ],
+  "decision_rationale": "CV-weighted blending leverages complementary inductive biases across gradient boosting frameworks, mitigating individual model variance and optimizing overall quadratic RMSE."
+}
